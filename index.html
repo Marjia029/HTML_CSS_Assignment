@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Juneau Vacation Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
     <header>
-        <a href="#">← See all properties</a>
+        <a href="#" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            See all properties
+        </a>
         <div class="nav-links">
-            <a href="#">United States</a>
-            <a href="#">Trip Boards</a>
-            <a href="#">List your property</a>
-            <a href="#">Help</a>
-            <a href="#">My Trip</a>
-            <a href="#">sign in</a>
+            <a href="#"><i class="fas fa-share"></i> Share</a>
+            <a href="#"><i class="fas fa-heart"></i> Save</a>
         </div>
     </header>
 
     <div class="image-gallery">
         <div class="main-image">
-            <img src="https://plus.unsplash.com/premium_photo-1686090450346-f418fff5486e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img src="./assets/pic1.png" alt="Deck view of lake">
+            <div class="image-count">
+                <i class="fas fa-images"></i>
+                30+
+            </div>
         </div>
         <div class="thumbnail-grid">
-            <img src="https://plus.unsplash.com/premium_photo-1686090449928-ecccb85fb0e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House exterior">
-            <img src="https://plus.unsplash.com/premium_photo-1686090448517-2f692cc45187?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Living room">
-            <img id="long-image" src="https://plus.unsplash.com/premium_photo-1686090446928-9fcc1b4a2d33?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wyfHx8ZW58MHx8fHx8 alt="Interior view">
-            <img id="long-image" src="https://plus.unsplash.com/premium_photo-1686090448668-8a323ffc622b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Another interior view">
+            <img src="./assets/pic2.png" alt="House exterior">
+            <img src="./assets/pic3.png" alt="Living room">
+            <img src="./assets/pic3.png" alt="Interior view">
+            <img src="./assets/pic3.png" alt="Another interior view">
         </div>
     </div>
 
@@ -47,38 +48,48 @@
             <span>Exceptional</span>
             <div class="features">
                 <div class="feature">
-                    <span> 🚪 2 bedrooms</span>
+                    <i class="fas fa-bed"></i>
+                    <span>2 bedrooms</span>
                 </div>
                 <div class="feature">
-                    <span>🛁 1 bathroom</span>
+                    <i class="fas fa-bath"></i>
+                    <span>1 bathroom</span>
                 </div>
                 <div class="feature">
-                    <span>👨‍👩‍👧‍👦 Sleeps 4</span>
+                    <i class="fas fa-user-friends"></i>
+                    <span>Sleeps 4</span>
                 </div>
                 <div class="feature">
-                    <span>❒ 1155 sq ft</span>
+                    <i class="fas fa-home"></i>
+                    <span>1155 sq ft</span>
                 </div>
             </div>
 
             <h2>Popular amenities</h2>
             <div class="features">
                 <div class="feature">
-                    <span>♨️Barbecue grill</span>
+                    <i class="fas fa-fire"></i>
+                    <span>Barbecue grill</span>
                 </div>
                 <div class="feature">
-                    <span> Washer</span>
+                    <i class="fas fa-washer"></i>
+                    <span>Washer</span>
                 </div>
                 <div class="feature">
+                    <i class="fas fa-tree"></i>
                     <span>Outdoor Space</span>
                 </div>
                 <div class="feature">
+                    <i class="fas fa-parking"></i>
                     <span>Parking available</span>
                 </div>
                 <div class="feature">
-                    <span>🍴Kitchen</span>
+                    <i class="fas fa-utensils"></i>
+                    <span>Kitchen</span>
                 </div>
                 <div class="feature">
-                    <span><i class="fa-regular fa-dryer"></i>Dryer</span>
+                    <i class="fas fa-dryer"></i>
+                    <span>Dryer</span>
                 </div>
             </div>
 
@@ -87,15 +98,24 @@
                 <img src="/api/placeholder/600/300" alt="Map">
                 <div class="location-items">
                     <div class="location-item">
-                        <span>Auke Bay</span>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Auke Bay</span>
+                        </div>
                         <span>6 min drive</span>
                     </div>
                     <div class="location-item">
-                        <span>University of Alaska-Southeast</span>
+                        <div>
+                            <i class="fas fa-university"></i>
+                            <span>University of Alaska-Southeast</span>
+                        </div>
                         <span>10 min drive</span>
                     </div>
                     <div class="location-item">
-                        <span>Mendenhall Golf Course</span>
+                        <div>
+                            <i class="fas fa-golf-ball"></i>
+                            <span>Mendenhall Golf Course</span>
+                        </div>
                         <span>14 min drive</span>
                     </div>
                 </div>
@@ -106,6 +126,10 @@
             <div class="booking-card">
                 <div class="price">
                     $134 <span style="font-weight: normal; font-size: 1rem;">per night</span>
+                </div>
+                <div class="free-cancel">
+                    <i class="fas fa-check-circle"></i>
+                    Free cancellation
                 </div>
                 <div class="date-picker">
                     <input type="text" class="date-input" placeholder="Start date" value="Nov 18">
@@ -120,10 +144,14 @@
                         <span>$543</span>
                     </div>
                 </div>
-                <button class="book-button">Book now</button>
+                <button class="book-button">
+                    <i class="fas fa-lock"></i>
+                    Book now
+                </button>
                 <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;">You will not be charged yet</p>
             </div>
-            <button class="book-button" style="background: white; color: #0052CC; border: 1px solid #0052CC; margin-top: 1rem;">
+            <button class="book-button contact-host">
+                <i class="fas fa-envelope"></i>
                 Contact host
             </button>
         </div>

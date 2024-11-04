@@ -250,16 +250,32 @@ header {
 }
 
 .map-container {
-    margin-top: 2rem;
+    margin-top: 1rem; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 2px;  
 }
+
+.map-image{
+    width: 100%;
+
+}
+
+
 
 .map-container img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+    justify-content: space-between;
 }
 
+
+
 .location-items {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
 }
 
 .location-item {
@@ -268,11 +284,12 @@ header {
     justify-content: space-between;
     padding: 0.8rem 0;
     border-bottom: 1px solid #e5e5e5;
+    gap: 2rem;
 }
 
 .location-item i {
     color: #666;
-    margin-right: 0.5rem;
+    margin-right: 0.1rem;
 }
 
 .contact-host {
@@ -308,6 +325,9 @@ header {
     }
 
     .features {
+        grid-template-columns: 1fr;
+    }
+    .map-container{
         grid-template-columns: 1fr;
     }
 }

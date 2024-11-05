@@ -251,7 +251,7 @@ header {
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: 20px;
     cursor: pointer;
     font-weight: 500;
     white-space: nowrap;
@@ -601,13 +601,14 @@ header {
 /* House Rule Section */
 
 
-.house-rule-section, .damage-section, .cancellation-section, .important-info, .faq-section, .rating-section, .host-section {
+.house-rule-section, .damage-section, .cancellation-section, .important-info, .faq-section, .rating-section, .host-section, .demo {
     margin-top: 2rem;
     display: grid;
     grid-column: 1/-1;
     grid-template-columns: 1fr 2fr;
     gap: 1 rem;
 }
+
 
 .house-rule-section .two-column, cancellation-Columns {
     display: grid;
@@ -815,17 +816,31 @@ h2 {
     margin-bottom: 8px;
   }
 
-  .rating {
+  .rating2 {
     color: rgb(0, 138, 104);
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 4px;
   }
 
   .rating-label {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 8px;
+  }
+
+  .rating-left-col{
+
+    display:grid;
+    gap:5px
+
+  }
+
+  .r-cards{
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 20px;
   }
 
   .reviews {
@@ -856,18 +871,28 @@ h2 {
     font-size: 14px;
   }
 
-  .see-all {
-    display: inline-block;
-    border: 1px solid #222;
-    border-radius: 8px;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #222;
-    margin-top: 20px;
+  .see-all button{
+        background: #1355FF;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        white-space: nowrap;
+    
   }
 
   .languages {
     margin-top: 12px;
+  }
+
+  .rating-section-main, .languages{
+    display: grid;
+    gap: 2rem;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 2fr;
+
   }
 
 /* @media (max-width: 768px) {

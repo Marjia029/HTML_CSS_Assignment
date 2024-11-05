@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .rating-section, .reviews-section {
+            padding: 20px;
+        }
+
+        .rating-section {
+            flex: 1;
+        }
+
+        .reviews-section {
+            flex: 3;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        /* Rating Section */
+        .rating-score {
+            font-size: 48px;
+            color: #008f00;
+            font-weight: bold;
+        }
+
+        .rating-details {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .reviews-count {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Reviews Section */
+        .reviews-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .review-card {
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .review-score {
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .review-text {
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .review-author {
+            font-weight: bold;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .review-date {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .see-all-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* About Section */
+        .about-section {
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .about-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .host-info {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .host-info p {
+            margin: 5px 0;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Rating Section -->
+        <div class="rating-section">
+            <div class="rating-score">9.8/10</div>
+            <div class="rating-details">Exceptional</div>
+            <div class="reviews-count">24 reviews</div>
+            <p>Reviews are verified unless labeled otherwise.</p>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+            <div class="reviews-title">Recent reviews</div>
+            <div class="review-card">
+                <div class="review-score">10/10 Excellent</div>
+                <div class="review-text">A very cozy home for the two of us in a quiet area NW of town. Beautiful water view. We enjoyed the art, read up in it and visited the...</div>
+                <div class="review-author">Kyle G.</div>
+                <div class="review-date">Sep 25, 2024</div>
+            </div>
+            <div class="review-card">
+                <div class="review-score">10/10 Excellent</div>
+                <div class="review-text">The cottage was just as the pictures and description stated. Nice quiet area and great view of the cove.</div>
+                <div class="review-author">Cindy B.</div>
+                <div class="review-date">Sep 23, 2024</div>
+            </div>
+            <!-- "See all reviews" Button aligned under the grid -->
+            <a href="#" class="see-all-btn">See all 24 reviews</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <div class="about-title">About the host</div>
+        <div class="host-info">
+            <p>Hosted by Evolve</p>
+            <p>Languages: English, French, German, Spanish</p>
+            <a href="#" class="contact-btn">Contact host</a>
+        </div>
+    </div>
+
+    <!-- Message Section -->
+    <div class="about-section">
+        <div class="about-title">Send a message</div>
+        <a href="#" class="contact-btn">Contact host</a>
+    </div>
+</body>
+</html>

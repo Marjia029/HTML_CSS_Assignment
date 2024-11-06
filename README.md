@@ -59,3 +59,5 @@ To get a local copy up and running, follow these steps.
 1. **Clone the repo:**
    ```bash
    git clone https://github.com/Marjia029/HTML_CSS_Assignment.git
+   cd HTML_CSS_Assignment
+2. **Open [index.html](/index.html) file with web browser to see the webpage.**

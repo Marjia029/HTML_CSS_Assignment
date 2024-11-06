@@ -16,7 +16,12 @@
             <a href="#">Help</a>
             <a href="#">My Trip</a>
             <a href="#">sign in</a>
+            
         </div>
+        <div class="nav-icon">   
+            <a href="#" ><i class="fas fa-user-circle"></i></a>
+        </div>
+        
     </header>
     
     <div class ="some-link">
@@ -83,7 +88,7 @@
                     <span>Barbecue grill</span>
                 </div>
                 <div class="feature">
-                    <i class="fa-solid fa-washing-machine"></i>
+                    🅾
                     <span>Washer</span>
                 </div>
                 <div class="feature">
@@ -99,7 +104,7 @@
                     <span>Kitchen</span>
                 </div>
                 <div class="feature">
-                    <i class="fas fa-dryer"></i>
+                    🅾
                     <span>Dryer</span>
                 </div>
             </div>
@@ -108,7 +113,13 @@
                 <h2>Explore the area</h2>
                 <div class="map-container">
                     <div class="map-image">
-                        <img src="./assets/map_image/map_juneau.png" alt="Map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13308.857847720037!2d-134.49056238128018!3d58.301944732938135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5400b2d5798e009d%3A0x4ed51c64d3f1b4e5!2sJuneau%2C%20AK%2C%20USA!5e0!3m2!1sen!2sus!4v1618600185661!5m2!1sen!2sus" 
+                            width="100%"                         
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
                         <div class="map-image-text">
                             <h4><b>Juneau, Alaska</b></h4> 
                             <p> <a href="">view in map</a> </p> 
@@ -144,7 +155,7 @@
                             </div>
                             <span>14 min drive</span>
                         </div>
-                        <div>
+                        <div class="location-item">
                            <a href="#">See more about this area ></a> 
                         </div>
                     </div>
@@ -252,6 +263,8 @@
             </div>
         </div>
 
+        <!-- Description  -->
+
         <div class="description-section">
             <h1>About this property</h1>
     
@@ -304,18 +317,23 @@
                     <li>Check-in photo ID required</li>
                 </ul>
                 
-                <p class="note">NOTE: Property has heating but no air conditioning</p>
-                <p class="note">NOTE: Maximum occupancy is 4 guests</p>
+                <div class="policy-hide">
+                    <p class="note">NOTE: Property has heating but no air conditioning</p>
+                    <p class="note">NOTE: Maximum occupancy is 4 guests</p>
+                </div>
             </div>
 
-            <div class="manager-section">
-                <h2>Property manager</h2>
-                <img src="./assets/property-manager/property-manager.png" alt="Property Management Logo">
-            </div>
-
-            <div class="languages">
-                <h2>Languages</h2>
-                <p>English, Spanish, French, German</p>
+            <div class="description-hide">
+                <div class="manager-section">
+                    <h2>Property manager</h2>
+                    <img src="./assets/property-manager/property-manager.png" alt="Property Management Logo">
+                </div>
+    
+                <div class="languages">
+                    <h2>Languages</h2>
+                    <p>English, Spanish, French, German</p>
+                </div>
+                <a href=" ">See more</a>
             </div>
 
         </div>
@@ -329,7 +347,7 @@
                         <span>Barbecue grill</span>
                     </div>
                     <div class="feature">
-                        <i class="fa-solid fa-washing-machine"></i>
+                        🅾
                         <span>Washer</span>
                     </div>
                     <div class="feature">
@@ -345,7 +363,7 @@
                         <span>Kitchen</span>
                     </div>
                     <div class="feature">
-                        <i class="fas fa-dryer"></i>
+                        🅾
                         <span>Dryer</span>
                     </div>
                 </div>
@@ -383,8 +401,8 @@
 
         <!-- House Rules Section -->
          <div class="house-rule-section">
-            <div>
-                <h2>House Rules</h2>
+            <div class="title">
+                House Rules
 
             </div>
                 
@@ -394,7 +412,9 @@
                 <div class="check-times">
                     <div class="check-time">Check in after 3:00 PM</div>
                     <div class="check-time">Check out before 11:00 AM</div>
-                    <div class="check-time">Check out before 11:00 AM</div>
+                    <div class= "last-check"><div class="check-time">Check out before 11:00 AM</div></div>
+                    
+                    <a href=" ">See more</a>
                 </div>
                 
                 <div class="rules-grid">
@@ -463,7 +483,7 @@
          <!-- Damage-Section -->
 
          <div class="damage-section">
-            <div class="title"><h2>Damage and incidentals</h2></div>
+            <div class="title">Damage and incidentals</div>
             
             <div class="damage-text">
                 You will be responsible for any damage to the rental property caused by you or your party during your stay.
@@ -503,7 +523,7 @@
                 </div>
 
                 <div class="policy-details">
-                    <div class="policy-item">
+                    <div class="policy-item-1">
                         <div class="policy-date">Before<br>Nov 4</div>
                         <div class="policy-info">
                             <h3>Full refund</h3>
@@ -526,37 +546,46 @@
 
 
         <div class="important-info">
-            <h2>Important information</h2>
-            <ul>
-              <li>Extra-person charges may apply and vary depending on property policy</li>
-              <li>Government-issued photo identification and a credit card, debit card, or cash deposit may be required at check-in for incidental charges</li>
-              <li>Special requests are subject to availability upon check-in and may incur additional charges; special requests cannot be guaranteed</li>
-              <li>Onsite parties or group events are strictly prohibited</li>
-              <li>Host has indicated there is a carbon monoxide detector on the property</li>
-              <li>Host has indicated there is a smoke detector on the property</li>
-              <li>Safety features at this property include a fire extinguisher and a first aid kit</li>
-            </ul>
+            <div class="title">Important information</div>
+            <div>
+                <ul>
+                    <li>Extra-person charges may apply and vary depending on property policy</li>
+                    <li>Government-issued photo identification and a credit card, debit card, or cash deposit may be required at check-in for incidental charges</li>
+                    <li>Special requests are subject to availability upon check-in and may incur additional charges; special requests cannot be guaranteed</li>
+                    <li>Onsite parties or group events are strictly prohibited</li>
+                    <li>Host has indicated there is a carbon monoxide detector on the property</li>
+                    <li>Host has indicated there is a smoke detector on the property</li>
+                    <li>Safety features at this property include a fire extinguisher and a first aid kit</li>
+                  </ul>
+            </div>
         </div>
         
         <div class="faq-section">
-            <div>
-                <h2>Frequently asked questions</h2>
+            <div class="title">
+                Frequently asked questions
             </div>
             <div>
                 <details>
+                    <details></details>
                     <summary>Is Juneau Vacation Home: Stunning View + Beach Access pet-friendly?</summary>
                     </details>
-                    <details>
-                    <summary>What time is check-in at Juneau Vacation Home: Stunning View + Beach Access?</summary>
-                    </details>
-                    <details>
-                    <summary>What time is check-out at Juneau Vacation Home: Stunning View + Beach Access?</summary>
-                    </details>
-                    <details>
-                    <summary>Where is Juneau Vacation Home: Stunning View + Beach Access located?</summary>
+                    <div class="faq-hidden">
+                        <details>
+                            <summary>What time is check-in at Juneau Vacation Home: Stunning View + Beach Access?</summary>
+                            </details>
+                            <details>
+                            <summary>What time is check-out at Juneau Vacation Home: Stunning View + Beach Access?</summary>
+                            </details>
+                            <details>
+                            <summary>Where is Juneau Vacation Home: Stunning View + Beach Access located?</summary>
+                            </details>
+
+                    </div>
+                    
                 </details>
 
             </div>
+            <a href=" ">See more</a>
                 
                 
         </div>
@@ -581,7 +610,7 @@
                         </div>
                     </div>
             
-                    <div class="review-card">
+                    <div class="review-card-2">
                         <div class="review-rating">10/10 Excellent</div>
                         <div class="review-text">The cottage was just as the pictures and description stated. Nice quiet area and great view of the cove.</div>
                         <div class="review-meta">
@@ -597,60 +626,23 @@
             </div>
         </div>
         
-        <!-- <div class="rating-section-main">
-            <div class="rating-name">
-                <div class="rating2">9.8/10</div>
-                <div class="rating-label">Exceptional</div>
-                <div>24 reviews</div>
-                <p>Reviews are verified unless labeled otherwise.</p>
-            </div>
-            
         
-            <div class="reviews">
-                <h4>Recent Review</h4>
-
-            </div>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cupiditate aspernatur laudantium molestiae sint sed necessitatibus laborum maiores omnis iure.
-            </div>
-                 <div class="review title">Recent Review</div> -->
-                <!-- <h3>Recent Reviews</h3>
-                <div class="rev-des">
-                    <div class="review-card">
-                        <div class="review-rating">10/10 Excellent</div>
-                        <div class="review-text">A very cozy home for the two of us in a quiet area NW of town. Beautiful water view. We enjoyed the art, read up in...</div>
-                        <div class="review-meta">
-                        <div>Kyle G.</div>
-                        <div>Sep 25, 2024</div>
-                        </div>
-                    </div>
-            
-                    <div class="review-card">
-                        <div class="review-rating">10/10 Excellent</div>
-                        <div class="review-text">The cottage was just as the pictures and description stated. Nice quiet area and great view of the cove.</div>
-                        <div class="review-meta">
-                        <div>Cindy B.</div>
-                        <div>Sep 23, 2024</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="see-all">See all 24 reviews</a>
-            
-        
-            
-        </div> -->
         
         <div class="host-section">
-            <div><h2>About the host</h2></div>
-            <div>
-                <div>Hosted by Evolve</div>
+            <div class="title">About the host</div>
+            <div class="host-des">
+                <div class="host-des-title">Hosted by Evolve</div>
+                <div>
+                    <div class="host-des-title">Languages:</div>
+                    <p>English, French, German, Spanish</p>
+                </div>
             </div>  
             
         </div>
 
-        <div class="languages">
-            <div>Languages</div>
-            <div>English, French, German, Spanish</div> 
+        <div class="send-a-msg">
+            <div class="title">Send a message</div>
+            <div class="contact-host-main"><button>Contact host</button></div> 
         </div>
         
     </div>

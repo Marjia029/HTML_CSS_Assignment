@@ -26,6 +26,9 @@ header {
     gap: 1.5rem;
     margin-left: auto;
 }
+ .nav-icon {
+    display: none;
+}
 
 .some-link {
     padding: 1rem;
@@ -63,8 +66,8 @@ header {
 .image-gallery {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 0.5rem;
-    padding: 0.5rem;
+    gap: 0.1rem;
+    /* padding: 0.5rem; */
     max-height: 400px;
 
 
@@ -96,7 +99,7 @@ header {
 .thumbnail-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
+    gap: 0.1rem;
 
    
 }
@@ -111,7 +114,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: fill;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 
@@ -138,6 +141,8 @@ header {
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
     padding: 2rem;
+
+    margin-bottom: 5rem;
 }
 
 .property-details h1 {
@@ -284,11 +289,12 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 100%;
     border-radius: 10px;
+    height: 200px;
 
 }
 
 .map-image-text{
-    padding: 2px 16px;
+    padding: 4px 16px;
 }
 
 .map-container img {
@@ -312,8 +318,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0.8rem 0;
-    border-bottom: 1px solid #e5e5e5;
+    /* border-bottom: 1px solid #e5e5e5; */
     gap: 2rem;
+}
+
+.location-item a, .map-image-text   a, .map-image-text a{
+    color: #0052CC;
+    text-decoration: none;
 }
 
 .location-item i {
@@ -452,7 +463,7 @@ header {
 } */
 
 .section p {
-    margin: 25px 0;
+    margin: 18px 0;
 }
 
 .property-details {
@@ -601,7 +612,7 @@ header {
 /* House Rule Section */
 
 
-.house-rule-section, .damage-section, .cancellation-section, .important-info, .faq-section, .rating-section, .host-section, .demo {
+.house-rule-section, .damage-section, .cancellation-section, .important-info, .faq-section, .rating-section, .host-section, .demo, .languages-main, .send-a-msg {
     margin-top: 2rem;
     display: grid;
     grid-column: 1/-1;
@@ -610,9 +621,13 @@ header {
 }
 
 
-.house-rule-section .two-column, cancellation-Columns {
+.house-rule-section .two-column, .cancellation-Columns {
     display: grid;
     gap: 2rem;
+}
+
+.house-rule-section .check-times a, .description-section a, .faq-section a{
+    display: none;
 }
 
 h2 {
@@ -755,9 +770,14 @@ h2 {
 
 .policy-details {
     margin-top: 2rem;
+    gap: 1rem;
 }
 
-.policy-item {
+.policy-item-1{
+    border-bottom: 1px solid #ddd;
+}
+
+.policy-item, .policy-item-1 {
     display: flex;
     margin-bottom: 1.5rem;
 }
@@ -811,10 +831,11 @@ h2 {
     cursor: pointer;
   }
 
-  .faq-section summary {
+  .faq-section summary, {
     font-weight: 500;
     margin-bottom: 8px;
   }
+  
 
   .rating2 {
     color: rgb(0, 138, 104);
@@ -850,7 +871,7 @@ h2 {
     margin-top: 20px;
   }
 
-  .review-card {
+  .review-card , .review-card-2{
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 24px;
@@ -883,11 +904,41 @@ h2 {
     
   }
 
-  .languages {
-    margin-top: 12px;
+  .host-des{
+    display: grid;
+    gap: 4rem; 
   }
 
-  .rating-section-main, .languages{
+  .host-des-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .host-des p{
+    font-size: 14px;
+  }
+
+
+
+  .contact-host-main button{
+    background: none;
+    color: #1355FF;
+    border: 1px solid #1355FF;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+
+
+  .languages-main {
+    margin-top: 2 rem;
+  }
+
+  .rating-section-main{
     display: grid;
     gap: 2rem;
     grid-column: 1/-1;
@@ -926,6 +977,12 @@ h2 {
     .nav-links {
         display: none;
     }
+    .nav-icon{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-left: auto;
+    }
 
     .features {
         grid-template-columns: 1fr;
@@ -933,9 +990,47 @@ h2 {
     .map-container{
         grid-template-columns: 1fr;
     }
-    .amenities-section{
+
+    .amenities-section, .description-section{
         grid-template-columns: 1fr;
     }
+
+    .house-rule-section, .damage-section, .cancellation-section, .important-info, .faq-section, .demo, .host-section, .send-a-msg{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .house-rule-section .two-column{
+        grid-template-columns: 1fr;
+    }
+
+    .house-rule-section .two-column .check-times{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .house-rule-section .two-column .check-times .last-check{
+        display: none;
+    }
+
+    .house-rule-section .two-column .check-times a, .description-section a, .faq-section a{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-decoration: none;
+        color: #1355FF;
+    }
+
+    .description-section .policy-hide, .description-section .description-hide{
+        display: none;
+    }
+
+
+
+    .house-rule-section .two-column .rules-grid{
+        display: none;
+        
+    }
+
 
     .question-card {
         margin: 10px;
@@ -945,5 +1040,56 @@ h2 {
     .search-input {
         font-size: 13px;
     }
+
+    .faq-section .faq-hidden{
+        display: none;
+    }
+
+    .review-card-2{
+        display: none;
+    }
+
+
+    /* Timeline Diagram */
+
+    .timeline {
+        position: relative;
+        height: 2px;
+        background: #ddd;
+        margin: 2rem 0;
+    }
+    
+    .timeline-point {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%, -50%);
+    }
+    
+    .timeline-point.filled {
+        width: 12px;
+        height: 12px;
+        background: #1a1a1a;
+        border-radius: 50%;
+    }
+    
+    .timeline-point.empty {
+        width: 10px;
+        height: 10px;
+        border: 2px solid #1a1a1a;
+        border-radius: 50%;
+        background: white;
+    }
+    
+    .timeline-point:nth-child(1) { left: 0; }
+    .timeline-point:nth-child(2) { left: 50%; }
+    .timeline-point:nth-child(3) { right: 0; }
+    
+    .timeline-labels {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    
 
 }

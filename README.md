@@ -6,7 +6,7 @@
 
 A responsive and modern landing page for vacation home rentals. This project provides an attractive and functional interface for users to browse properties, check amenities, view house rules, and make bookings.
 
-![Screenshot of the Landing Page](./assets/page-demo.png)
+![Screenshot of the Landing Page](./assets/web-page-demo.png)
 
 ## 📜 Table of Contents
 
@@ -60,4 +60,4 @@ To get a local copy up and running, follow these steps.
    ```bash
    git clone https://github.com/Marjia029/HTML_CSS_Assignment.git
    cd HTML_CSS_Assignment
-2. **Open [index.html](/index.html) file with web browser to see the webpage.**
+2. **Open [index.html](/index.html) file with web browser or [Click here](https://marjia029.github.io/HTML_CSS_Assignment/) to see the webpage.**
